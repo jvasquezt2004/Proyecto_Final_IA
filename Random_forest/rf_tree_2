@@ -1,0 +1,25 @@
+digraph {
+	root [label=Root]
+	"1_14.6375" [label="Na_to_K <= 14.64"]
+	root -> "1_14.6375"
+	"4_0.5" [label="BP_NORMAL <= 0.50"]
+	"1_14.6375" -> "4_0.5"
+	"3_0.5" [label="BP_LOW <= 0.50"]
+	"4_0.5" -> "3_0.5"
+	"0_52.5" [label="Age <= 52.50"]
+	"3_0.5" -> "0_52.5"
+	leaf_0 [label=0]
+	"0_52.5" -> leaf_0
+	leaf_1 [label=1]
+	"0_52.5" -> leaf_1
+	"5_0.5" [label="Cholesterol_NORMAL <= 0.50"]
+	"3_0.5" -> "5_0.5"
+	leaf_2 [label=2]
+	"5_0.5" -> leaf_2
+	leaf_3 [label=3]
+	"5_0.5" -> leaf_3
+	leaf_3 [label=3]
+	"4_0.5" -> leaf_3
+	leaf_4 [label=4]
+	"1_14.6375" -> leaf_4
+}
